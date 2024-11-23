@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label, form input, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Регистрация</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Главная</a>
+            <a href="patient.html">Личный кабинет пациента</a>
+            <a href="doctor.html">Личный кабинет врача</a>
+            <a href="database.html">База данных болезней</a>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Войти</a>
+            <a href="registration.html">Регистрация</a>
+        </div>
+    </nav>
+    <section>
+        <form>
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="middle-name">Отчество</label>
+            <input type="text" id="middle-name" name="middle-name">
+
+            <label for="birthdate">Дата рождения</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="gender">Пол</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+
+            <label for="snils">СНИЛС</label>
+            <input type="text" id="snils" name="snils" required>
+
+            <label for="policy">Номер полиса ОМС</label>
+            <input type="text" id="policy" name="policy" required>
+
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>
+                <input type="checkbox" required> Я даю согласие на обработку персональных данных
+            </label>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </section>
+    <footer>
+            <p>&copy; 2024. Все права защищены.</p>
+    <p><a href="legal.html">Правовые документы</a></p>
+    </footer>
+</body>
+</html>

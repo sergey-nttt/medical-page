@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+    <style>
+        /* Сброс стандартных стилей */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .login-section {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .login-section label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .login-section input[type="text"],
+        .login-section input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-section input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .login-section a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .login-section a:hover {
+            text-decoration: underline;
+        }
+
+        .login-section button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-section button:hover {
+            background-color: #45a049;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Заголовок -->
+    <header>
+        <h1>Войти</h1>
+    </header>
+
+    <!-- Навигация -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="patient.html">Личный кабинет пациента</a>
+        <a href="doctor.html">Личный кабинет врача</a>
+        <a href="database.html">База данных болезней</a>
+    </nav>
+
+    <!-- Секция входа -->
+    <section class="login-section">
+        <h2>Вход в личный кабинет</h2>
+        <form action="dashboard.html" method="POST">
+            <label for="phone">Номер телефона</label>
+            <input type="text" id="phone" name="phone" placeholder="Введите ваш номер" required>
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required>
+
+            <div>
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">
+                    <a href="terms.html">Согласен с условиями пользовательского соглашения</a>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">
+                    <a href="privacy.html">Согласен с политикой конфиденциальности</a>
+                </label>
+            </div>
+            <div style="text-align: right; margin-top: 10px;">
+                <a href="recover.html">Забыли пароль?</a>
+            </div>
+
+            <button type="submit">Войти</button>
+        </form>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact-info">
+        <p><strong>Контакты:</strong></p>
+        <p>Адрес: ул. Примерная, д. 1, Москва</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: martinowilia@yandex.ru</p>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+    <p>&copy; 2024. Все права защищены.</p>
+    <p><a href="legal.html">Правовые документы</a></p>
+    </footer>
+</body>
+</html>
